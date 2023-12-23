@@ -3,4 +3,4 @@ from django.shortcuts import render
 
 # Create your views here.
 def home(request):
-    return HttpResponse("Hello Every One")
+    return render(request,'index.html',{'current_year':2024})
