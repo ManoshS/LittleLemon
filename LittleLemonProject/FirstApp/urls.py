@@ -17,4 +17,5 @@ urlpatterns = [
     path('booking/set/',include(router.urls)),
     path('RegisterUser/',views.RegisterUser.as_view()),
     path('api-token-auth/',obtain_auth_token),
+    path('secure/',views.secrateMessage,name="securityTest")
 ]
